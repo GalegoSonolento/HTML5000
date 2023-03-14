@@ -42,79 +42,94 @@
 
             <section id="corpo">
 
-                <!--A tag <br/> (break row) faz a quebra de linha no html. Cada uso dela gera uma 
-                quebra de linha
-                O esquema do &nbsp; aumenta um espaço em branco-->
-                <hgroup>
-                    <h3>Tecnologia > Inovações</h3>
-                    <h1> tudo sobre o Google Glass</h1>
-                    <h2>por Gustavo Guanabara</h2>
-                    <h3>Atualizado em 23/Abril/2013</h3>
-                </hgroup>
+                <!--Essa tag usa divisões dentro do mesmo espaço. Podem existir vários articles dentro de uma mesma section-->
+                <article id="notica-principal">
+                    <!--Dá pra usar os headers pra fazer qql tipo de cabecalho dentro do site-->
+                    <header id="cabecalho-artigo">
+                    <!--A tag <br/> (break row) faz a quebra de linha no html. Cada uso dela gera uma 
+                    quebra de linha
+                    O esquema do &nbsp; aumenta um espaço em branco-->
+                        <hgroup>
+                            <h3>Tecnologia > Inovações</h3>
+                            <h1> tudo sobre o Google Glass</h1>
+                            <h2>por Gustavo Guanabara</h2>
+                            <h3 class="direita">Atualizado em 23/Abril/2013</h3>
+                        </hgroup>
+                    </header>
 
-                <!--
-                    Aqui são duas tags que utilizam esquemas no html para mostragem de código. Apenas algumas observações pertinentes.
+                    <!--
+                        Aqui são duas tags que utilizam esquemas no html para mostragem de código. Apenas algumas observações pertinentes.
 
 
-                <pre>
-                    <code>
+                    <pre>
+                        <code>
 public static void main(String[] args){
     System.out.println("Hello World");
 }
-                    </code>
-                </pre>
-                -->
+                        </code>
+                    </pre>
+                    -->
 
 
-                <!--
-                    Veja que esses símbolos especiais são interessantes mas extremamente situacionais, normalmente poucos são usados. Ainda assim é interessante manter uma src pra pegá-los de vez em quando
+                    <!--
+                        Veja que esses símbolos especiais são interessantes mas extremamente situacionais, normalmente poucos são usados. Ainda assim é interessante manter uma src pra pegá-los de vez em quando
 
-                <h1>Símbolos especiais</h1>
-                <p>Toda a simbologia pode ser encontrada aqui: 'https://erikasarti.com/html/dingbats-simbolos-desenhos/'</p>
-                -->
-                
-                <h2>O que é</h2>
-                <!--Acabei de descobrir essa tag nova aqui, a &shy;, aparentemente ela funciona igual a tag <wbr/>, mas adiciona o hyphen entre as hifenizações
-                Outra formatação interessante é a <em></em> - de emphasis. Muito parecida com as letras em itálico, mas com leves diferenças na letra e semânticas. Pro navegador o termo está em ênfase (algumas mudanças dependendo do contexto do navegador)
-                A tag <del></del> substitui a tag <s>. Essa tag risca a palavra
-                Muitas das tags antigas foram transferidas para formatação em CSS3. O problema q isso gera é a herança de características. Possivelmente usar text-decoration: none ou outro tipo de parâmetro com none será necessário-->
-                <p>O <span style="font-weight: bolder">Google Glass</span> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <a href="https://www.google.com/glass/start/" target="_blank">Google Glass</a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeo&shy;con&shy;ferên&shy;cias. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o <em>Google Glass</em> encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
+                    <h1>Símbolos especiais</h1>
+                    <p>Toda a simbologia pode ser encontrada aqui: 'https://erikasarti.com/html/dingbats-simbolos-desenhos/'</p>
+                    -->
+                    
+                    <h2>O que é</h2>
+                    <!--Acabei de descobrir essa tag nova aqui, a &shy;, aparentemente ela funciona igual a tag <wbr/>, mas adiciona o hyphen entre as hifenizações
+                    Outra formatação interessante é a <em></em> - de emphasis. Muito parecida com as letras em itálico, mas com leves diferenças na letra e semânticas. Pro navegador o termo está em ênfase (algumas mudanças dependendo do contexto do navegador)
+                    A tag <del></del> substitui a tag <s>. Essa tag risca a palavra
+                    Muitas das tags antigas foram transferidas para formatação em CSS3. O problema q isso gera é a herança de características. Possivelmente usar text-decoration: none ou outro tipo de parâmetro com none será necessário-->
+                    <p>O <span style="font-weight: bolder">Google Glass</span> é um acessório em forma de óculos que possibilita a interação dos usuários com diversos conteúdos em realidade aumentada. Também chamado de <a href="https://www.google.com/glass/start/" target="_blank">Google Glass</a>, o eletrônico é capaz de tirar fotos a partir de comandos de voz, enviar mensagens instantâneas e realizar vídeo&shy;con&shy;ferên&shy;cias. Seu lançamento está previsto para 2014, e seu preço deve ser de US$ 1,5 mil. Atualmente o <em>Google Glass</em> encontra-se em fase de testes e já possui um vídeo totalmente gravado com o dispositivo. Além disso, a companhia de buscas registrou novas patentes anti-furto e de desbloqueio de tela para o acessório.</p>
 
-                <!--Uma observação relacionada às imagens: é muito melhor usar um arquivo menor de verdade (dá pra mudar tudo em editores de texto) e colocar ele no tamanho certo, otimizado pra web, ao invés de só diminuir o arquivo na mão mesmo (com as tags de width
-                Tbm dá pra dizer que imagens png são consideravelmente maiores que os outros formatos
-                <img src="fundoInfinito.jpg"/>-->
+                    <!--Uma observação relacionada às imagens: é muito melhor usar um arquivo menor de verdade (dá pra mudar tudo em editores de texto) e colocar ele no tamanho certo, otimizado pra web, ao invés de só diminuir o arquivo na mão mesmo (com as tags de width
+                    Tbm dá pra dizer que imagens png são consideravelmente maiores que os outros formatos
+                    <img src="fundoInfinito.jpg"/>-->
 
-                <!--Essa tag <figure></figure> é meio nova no html e serve para juntar os componentes de uma imagem. Como legenda, nome endereçamento, etc. Ajuda na hora das pesquisas e audiodescrições-->
-                <figure class="foto-legenda">
-                    <!--Apesar do windows usar contra-barras pra indexação de arquivos, a maioria dos sistemas p/ internet usa barras normais, então isso se tornou o padrão pra interpretação web. Evite ao máximo os caminhos absolutos na hora das imagens (quando ele for pro servidor as caminhos não funcionam mais)-->
-                    <img src="_imagens/glass-quadro-homem-mulher.jpg"/>
-                    <!--Esse figcaption tem um nome vindo de 'CC' (closed captions). É uma legenda, basicamente. Claro que existe uma esquematização CSS pra corrigir qql erro nessa tag-->
-                    <figcaption>
-                        <h3>Google Glass</h3>
-                        <p>Uma nova maneira de ver o mundo</p>
-                    </figcaption>
-                </figure>
+                    <!--Essa tag <figure></figure> é meio nova no html e serve para juntar os componentes de uma imagem. Como legenda, nome endereçamento, etc. Ajuda na hora das pesquisas e audiodescrições-->
+                    <figure class="foto-legenda">
+                        <!--Apesar do windows usar contra-barras pra indexação de arquivos, a maioria dos sistemas p/ internet usa barras normais, então isso se tornou o padrão pra interpretação web. Evite ao máximo os caminhos absolutos na hora das imagens (quando ele for pro servidor as caminhos não funcionam mais)-->
+                        <img src="_imagens/glass-quadro-homem-mulher.jpg"/>
+                        <!--Esse figcaption tem um nome vindo de 'CC' (closed captions). É uma legenda, basicamente. Claro que existe uma esquematização CSS pra corrigir qql erro nessa tag-->
+                        <figcaption>
+                            <h3>Google Glass</h3>
+                            <p>Uma nova maneira de ver o mundo</p>
+                        </figcaption>
+                    </figure>
 
-                <h2>Data de lançamento</h2>
-                <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
+                    <h2>Data de lançamento</h2>
+                    <p>Não há uma data específica e oficial para o dispositivo ser lançado, ainda. Pode ser que ele esteja disponível em demonstrações a partir de 2013, mas seu lançamento para as lojas fica para, pelo menos, 2014.</p>
 
-                <h1>Especificações Técnicas</h1>
-                Tabela Técnica do Google Glass Mar/2013
+                    <h2>Especificações Técnicas</h2>
+                    <table id="tabela-spec">
+                        <caption>Tabela Técnica do Google Glass <span>Mar/2013</span></caption>
 
-                Tela:Resolução equivalente a tela de 25"
-                Camera: 5MP para fotos / 720p para vídeos
-                Conectividade: Wi-Fi/ Bluetooth
-                Memória Interna: 12GB
+                        <!--Aqui os <tr></tr> são table rows, ou as linhas de uma tabela
+                        O <td></td> é de table data, serve para seprar os itens das células dentro da tabela. Notar a hierarquia do processo. <td> só funciona dentro de uma <tr>.
+                        Claro que só as tags não fazem milagre, também é preciso um css na página
+                        Normalmente ele sempre joga pra esquerda
+                        O parâmetro rowspan permite colocar quantas linhas aquela célula ocupa
+                        No mesmo sentido, colsapm permite colocar quantas colunas a célula ocupa-->
+                        <tr><td class="ce">Tela</td><td class="cd">Resolução equivalente a tela de 25"</td></tr>
+                        <tr><td rowspan="2" class="ce">Camera</td> <td class="cd">5MP para fotos</tr>
+                        <tr><td class="cd">720p para vídeos</td></tr>
+                        <tr><td rowspan="2" class="ce">Conectividade</td> <td class="cd">Wi-Fi</td></tr>
+                        <tr><td class="cd">Bluetooth</td></tr>
+                        <tr><td class="ce">Memória Interna</td> <td class="cd">12GB</td></tr>
+                    </table>
 
-                <h1>Como funciona</h1>
-                <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça</p>
+                    <h2>Como funciona</h2>
+                    <p>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça</p>
 
-                <!--Existe essa tag de html5, a <wbr/> (short para wordbreaker), ela funciona como uma marcação de quebra de linha dentro do código (normalmente em parágrafos)-->
-                <h1>O que você pode fazer com o Google Glasses</h1>
-                <p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-<wbr/>humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
+                    <!--Existe essa tag de html5, a <wbr/> (short para wordbreaker), ela funciona como uma marcação de quebra de linha dentro do código (normalmente em parágrafos)-->
+                    <h2>O que você pode fazer com o Google Glasses</h2>
+                    <p>O vídeo de divulgação do Google mostra que você pode se transformar em uma espécie de “super-<wbr/>humano”, já que o aparelho pode indicar a quantos metros você está de seu destino, se o metrô está aberto ou fechado, mostrar o clima, agenda e até mesmo permitir que você marque encontros apenas com comandos de voz.</p>
 
-                [AQUI ENTRA UM VÍDEO]
-
+                    [AQUI ENTRA UM VÍDEO]
+                </article>
             </section>
             <aside id="lateral">
                 <h1>Outras Notícias</h1>
